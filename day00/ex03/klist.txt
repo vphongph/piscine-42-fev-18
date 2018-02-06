@@ -1,0 +1,5 @@
+Credentials cache: API:71D99C8C-703E-411B-BC49-6D16163BD3CB
+        Principal: vphongph@42.FR
+
+  Issued                Expires               Principal
+Feb  5 22:39:26 2018  Feb 12 22:39:26 2018  krbtgt/42.FR@42.FR
