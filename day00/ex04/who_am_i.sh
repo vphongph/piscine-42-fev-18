@@ -1,1 +1,1 @@
-ldapsearch -LLL  uid=$USER dn
+ldapsearch -LLLx  uid=$USER dn | sed "s/dn: //" | xargs
