@@ -1,1 +1,1 @@
-ldapsearch -LLLx  uid=$USER dn | sed "s/dn: //" | xargs
+ldapwhoami -Q | cut -d: -f2
