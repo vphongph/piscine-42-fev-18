@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/09 12:52:31 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/09 13:23:14 by vphongph         ###   ########.fr       */
+/*   Created: 2018/02/09 15:31:13 by vphongph          #+#    #+#             */
+/*   Updated: 2018/02/09 16:10:35 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
+//ft called
 
 int main (void)
 {
-	ft_print_reverse_alphabet();
+// my ft and code
 	return (0);
 }
