@@ -1,0 +1,8 @@
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   day00/ex04/who_am_i.sh
+
+Thu Feb  8 18:34:45 CET 2018

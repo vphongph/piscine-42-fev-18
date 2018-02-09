@@ -1,0 +1,8 @@
+i // mode insert
+q// quitter
+w // enregistrer
+yy // copier une ligne
+dd // couper
+p // coller
+u // revenir en arriere
+
