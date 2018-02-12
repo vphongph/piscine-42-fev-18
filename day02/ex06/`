@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h> // delete me
+//#include <unistd.h>
+//#include <stdio.h> // delete me
 
-void 	ft_putchar(char c);
+//void 	ft_putchar(char c);
 
 void	ft_print(unsigned int a)
 {
@@ -26,13 +26,13 @@ void	ft_putnbr(int nb)
 {
 	unsigned int a;
 	
-	a = (unsigned int)nb;
-//	printf("nb = %i%s\n", nb, "\n");
+	a = nb;
+	printf("nb = %i%s\n", nb, "\n");
 	if (nb < 0)
 	{	
 		ft_putchar('-');
-		a = (unsigned int)(nb);
+	//	a = -nb;
 	}
-//	printf("a = %u%s\n", a, "\n"); // delete me
+	printf("a = %u%s\n", a, "\n"); // delete me
 	ft_print(a);
 }
