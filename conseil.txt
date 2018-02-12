@@ -1,3 +1,5 @@
+Raccourcis VIM par Paulo
+
 i // mode insert
 q// quitter
 w // enregistrer
@@ -6,3 +8,35 @@ dd // couper
 p // coller
 u // revenir en arriere
 
+PIMP VIM
+
+.myvimrc
+
+set mouse=a
+set number
+syntax on
+set smartcase
+set hlsearch
+set history=1000
+set undolevels=1000
+nnoremap ; :
+set listchars=tab:>-,trail:-
+set list
+set ruler
+
+MES ALIAS
+
+.zshrc
+
+alias p="pwd"
+alias gs="git status"
+alias lR="ls -lRah"
+
+Pour ouvrir dossier dans sublime text
+alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
++ alias qqchose = 2>&1 >> fichier.txt	pour passer mes messages erreurs dans un fichier texte (historique)
+
++ alias de oh my zsh comme:
+alias l="ls -lah"
+alias md="mkdir"
