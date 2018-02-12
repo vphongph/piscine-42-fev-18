@@ -6,11 +6,9 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/09 15:31:13 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/12 01:21:26 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/12 01:58:37 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void 	ft_putchar(char c);
 
 void	ft_putnbr(int nb);
 
@@ -18,7 +16,7 @@ int main (void)
 {
 	int nb;
 	
-	nb = -1234564;
+	nb = -2147483641;
 	ft_putnbr(nb);
 	return (0);
 }
