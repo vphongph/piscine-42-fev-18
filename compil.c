@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   compil.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vphongph <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/09 12:59:28 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/09 16:01:35 by vphongph         ###   ########.fr       */
+/*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
+/*   Updated: 2018/02/12 19:15:22 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c);
+void ft_putnbr(int nb);
+
+int	main(int ac, char **av)
 {
-	write(1, &c, 1);
+
+
+	
+	// if (ac != 2)
+	// 	return 0;
+	// ft_putnbr(atoi(av[1]));	
+	// ft_putchar('\n');
+	// return 0;
 }
-
-
