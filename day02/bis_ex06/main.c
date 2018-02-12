@@ -1,35 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/12 01:50:34 by vphongph         ###   ########.fr       */
+/*   Created: 2018/02/09 15:31:13 by vphongph          #+#    #+#             */
+/*   Updated: 2018/02/12 14:16:07 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h> // delete me
+void	ft_putnbr(int nb);
 
-void 	ft_putchar(char c);
-
-void	ft_print(unsigned int a)
+int main (void)
 {
-	if (a >= 10)
-		ft_print(a / 10);
-	ft_putchar(a % 10 + '0');
-}
-
-void	ft_putnbr(int nb)
-{
-	unsigned int a;
-	printf("nb = %i%s\n", nb, "\n");
-	a = (unsigned int)nb;
-	printf("a = %u%s\n", a, "\n"); // delete me
-	if (nb < 0)
-		ft_putchar('-');
-
-	ft_print(a);
+	int nb;
+	
+	nb = -2147483641;
+	ft_putnbr(nb);
+	return (0);
 }

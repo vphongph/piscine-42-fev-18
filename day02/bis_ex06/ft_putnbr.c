@@ -6,14 +6,14 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/12 01:58:36 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/12 14:20:52 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
-//#include <stdio.h> // delete me
+#include <unistd.h>
+#include <stdio.h> // delete me
 
-//void 	ft_putchar(char c);
+void 	ft_putchar(char c);
 
 void	ft_print(unsigned int a)
 {
@@ -26,13 +26,13 @@ void	ft_putnbr(int nb)
 {
 	unsigned int a;
 	
-	a = nb;
-	printf("nb = %i%s\n", nb, "\n");
+	a = (unsigned int)nb;
+//	printf("nb = %i%s\n", nb, "\n");
 	if (nb < 0)
 	{	
 		ft_putchar('-');
-	//	a = -nb;
+		a = (unsigned int)(-nb);
 	}
-	printf("a = %u%s\n", a, "\n"); // delete me
+//	printf("a = %u%s\n", a, "\n"); // delete me
 	ft_print(a);
 }
