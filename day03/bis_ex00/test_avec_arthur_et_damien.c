@@ -10,60 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>
 
 
-void	ft_ft(int *nbr);
-void	ft_putnbr(int nb);
 
 int main (void)
 {
-	// int *nbr;
+	int	*ptrlol;
+	int	*ptr;
 
-	// int *tmp;
-
-	// *nbr = 12;
-	// *tmp = 99;
-
-	// ft_putnbr(*nbr);
-	// nbr = tmp;
-
-
-	// // ft_ft(nbr);
-	// ft_putnbr(*nbr);
-
-// int i;
-
-// i = sizeof(long long int);
-
-// ft_putnbr(i);
-
-char *a;
-
-	a = (char*)malloc(sizeof(char) * 20);	
-	a = "salut jean bont";
-
-	char a[] = "salut"
-	a[0] = 'u';
-	a[1] = 'i';
-	a[2] = 'p';
-	a[3] = 'l';
-	a[4] = 'c';
-
-
-
-
-	int i;
-
-	i = 0;
-	while (a[i] != '\0')
-	{
-		write(1, &a[i], 1);
-		i++;
-	}
-
-
+	printf("%p", ptr);
+	*ptr = 11;
+	printf("\n%d", *ptr);
 
 	return (0);
 }
