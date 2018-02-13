@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/13 20:46:57 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/13 22:21:11 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		main(void)
 // int	main(int ac, char **av)
 {
 
-	char string[] = "Phongphaysane";
+	char string[] = "anticonstitutionnellememt";
 
 	ft_putnbr(ft_strlen(string));
 	
