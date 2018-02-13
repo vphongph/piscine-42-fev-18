@@ -1,19 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vphongph <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/09 15:31:13 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/09 16:10:35 by vphongph         ###   ########.fr       */
+/*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
+/*   Updated: 2018/02/13 14:15:36 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//ft called
-
-int main (void)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-// my ft and code
-	return (0);
+	*div = a / b;
+	*mod = a % b;
 }
