@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/13 00:41:39 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/13 12:55:16 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,34 @@ void	ft_putnbr(int nb)
 	ft_print(a);
 }
 
+void	ft_swap(int *a, int *b);
 
-
-// int		main(void)
+int		main(void)
 // int	main(int ac, char **av)
 {
+	int *lol;
+	int *mdr;
+	int i;
+	int j;
+
+	i = 123;
+	j = 321;
+	lol = &i;
+	mdr = &j;
+
+	write(1, "\ni: ", 4);
+	ft_putnbr(i);
+	write(1, "\nj: ", 4);
+	ft_putnbr(j);
+
+
+	ft_swap(lol, mdr);
 	
-	
+	write(1, "\ni: ", 4);
+	ft_putnbr(i);
+	write(1, "\nj: ", 4);
+	ft_putnbr(j);
+
 	
 	// if (ac != 2)
 		// return 0;
