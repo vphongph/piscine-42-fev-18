@@ -1,55 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   compil.c                                           :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/13 22:50:21 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/14 23:36:56 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-void	ft_putchar(char c)
+int	ft_atoi(char *str)
 {
-	write(1, &c, 1);
-}
+	int s;
+	int nb;
 
-void	ft_print(unsigned int a)
-{
-	if (a >= 10)
-		ft_print(a / 10);
-	ft_putchar(a % 10 + '0');
-}
+	s = 0;
+	nb = 0;
 
-void	ft_putnbr(int nb)
-{
-	unsigned int a;
+	while ((*str > 8 && *str < 14) || *str == 32 || *str == '0')
+		str++;
+	if ( (s = *str == '-' ? -1 : 1)  == -1 || *str == '+' )
+		str++;
 
-	a = (unsigned int)nb;
-	if (nb < 0)
+	while (*str >= '0' && *str <= '9')
 	{
-		ft_putchar('-');
-		a = (unsigned int)(-nb);
+		nb = nb * 10 + (*str++ - '0');
 	}
-	ft_print(a);
+
+	return (nb * s);
 }
 
-char	*ft_strrev(char *str);
 
-int		main(void)
-// int	main(int ac, char **av)
-{
-	
-	
-	
-	// if (ac != 2)
-		// return 0;
-	// ft_putnbr(atoi(av[1]));	
-	// ft_putchar('\n');
-	return 0;
-}
+	//Pour comprendre le ternaire ci dessus il faut penser a :
+	//if ((i = 3) == (nb = 12))
+	//
+	//le if du haut est equivalente a ci dessous
+	// if (str[i] == '-')
+	// {
+	// 	nb = -1;
+	// 	i++;
+	// }
+	// else if (str[i] == '+')
+	// {
+	// 	nb = 1;
+	// 	i++;
+	// }

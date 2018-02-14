@@ -23,6 +23,7 @@ nnoremap ; :
 set listchars=tab:>-,trail:-
 set list
 set ruler
+set relativenumber
 
 MES ALIAS
 

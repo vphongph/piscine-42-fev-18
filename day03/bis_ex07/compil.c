@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/14 15:20:32 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/14 13:22:54 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,17 @@ void	ft_putnbr(int nb)
 	ft_print(a);
 }
 
-void	ft_putstr(char *str);
+char	*ft_strrev(char *str);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
-	char string[] = "L'important c'est de \0niquer des mères =-09876^570!@\n";
-	ft_putstr(string);
+	
+	char str[] = "tsuoheB suregrO";
+
+	printf("\nstr = %s\n", str);
+
+	printf("\nstr = %s\n", ft_strrev(str));
 	
 	// if (ac != 2)
 		// return 0;

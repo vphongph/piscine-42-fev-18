@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/14 13:20:51 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/14 23:42:10 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrev(char *str)
+int	ft_atoi(char *str)
 {
-	char	tmp;
-	int		count;
-	int		shift;
+	int s;
+	int nb;
 
-	tmp = str[0];
-	count = 0;
-	shift = 0;
-	while (str[count])
-		count++;
-	while (shift < (count / 2))
-	{
-		tmp = str[shift];
-		str[shift] = str[count - shift - 1];
-		str[count - shift - 1] = tmp;
-		shift++;
-	}
-	return (str);
+	s = 0;
+	nb = 0;
+	while ((*str > 8 && *str < 14) || *str == 32 || *str == '0')
+		str++;
+	if ((s = *str == '-' ? -1 : 1) == -1 || *str == '+')
+		str++;
+	while (*str >= '0' && *str <= '9')
+		nb = nb * 10 + (*str++ - '0');
+	return (nb * s);
 }
