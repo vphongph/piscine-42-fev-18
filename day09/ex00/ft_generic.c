@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_generic.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/15 18:28:48 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/15 17:03:50 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
-{
-	int s;
-	int nb;
+#include <unistd.h>
 
-	s = 0;
-	nb = 0;
-	while ((*str > 8 && *str < 14) || *str == 32)
-		str++;
-	if ((s = *str == '-' ? -1 : 1) == -1 || *str == '+')
-		str++;
-	while (*str >= '0' && *str <= '9')
-		nb = nb * 10 + (*str++ - '0');
-	return (nb * s);
+void	ft_generic(void)
+{
+	write(1, "Tut tut ; Tut tut\n", 18);
 }

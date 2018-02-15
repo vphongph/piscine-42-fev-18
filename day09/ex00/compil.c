@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/15 18:28:48 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/15 17:14:11 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,43 +39,19 @@ void	ft_putnbr(int nb)
 	ft_print(a);
 }
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
-{
-	while (*str)
-		ft_putchar(*str++);
-	ft_putchar('\n');
-}
-
 //printf("blabla = \n%s", arg);
 
-int		ft_atoi(char *str);
+void	ft_generic(void);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
-//	char str[4];
-
-//	str[0]= 49;
-//	str[1]='-';
-//	str[2]= 48;
-//	str[3]='8';
-
-
-	char str[] = "000012";
-
-	//			 "9223372036854775807"
-	// printf("\natoi = %d", atoi(str));
-	ft_putstr("atoi = ");
-	ft_putnbr(atoi(str));
-
-	ft_putstr("\nft_atoi = ");
-	ft_putnbr(ft_atoi(str));
-
+	
+	ft_generic();	
+	
 	// if (ac != 2)
 		// return 0;
 	// ft_putnbr(atoi(av[1]));	
 	// ft_putchar('\n');
-	return (0);
+	return 0;
 }
