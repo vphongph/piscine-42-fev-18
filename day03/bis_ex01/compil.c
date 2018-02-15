@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/13 14:31:46 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/15 18:39:16 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_putnbr(int nb)
 	ft_print(a);
 }
 
-void	ft_ultimate(int *********nbr);
+void	ft_ultimate_ft(int *********nbr);
 
 int		main(void)
 // int	main(int ac, char **av)
@@ -65,10 +65,10 @@ int		main(void)
 	point8 = &point7;
 	point9 = &point8;
 
-	ft_ultimate(point9);
+	ft_ultimate_ft(point9);
 	ft_putnbr(*********point9);
 
-	ft_ultimate(point9);
+	ft_ultimate_ft(point9);
 
 	
 	// if (ac != 2)
