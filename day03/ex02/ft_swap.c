@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/14 12:13:09 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/15 19:32:10 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@ void	ft_swap(int *a, int *b)
 {
 	int tmp;
 
-	tmp = 0;
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
