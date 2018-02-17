@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/16 16:11:42 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/17 18:05:15 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +41,19 @@ void	ft_putnbr(int nb)
 
 //printf("blabla = \n%s", arg);
 
-int ft_iterative_power(int nb, int power);
+int ft_recursive_power(int nb, int power);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
-	int lol = -2;
-	int mdr = 31;
-	
-	printf("\nnb = %d\npower = %d", lol, mdr);
-	
-	ft_iterative_power(lol, mdr);
+	int nb = 0;
+	int power = 2000000000;
 
-	printf("\nresult = %d\n", ft_iterative_power(lol, mdr));
-
+	ft_recursive_power(nb, power);
+	
+	printf("\nnb = %d\npower = %d",nb , power);
+	printf("\nresult = %d\n", ft_recursive_power(nb, power));
+	
 	// if (ac != 2)
 		// return 0;
 	// ft_putnbr(atoi(av[1]));	
