@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   compil.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/19 16:33:57 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/19 17:32:44 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print(unsigned int a)
 {
@@ -30,4 +37,25 @@ void	ft_putnbr(int nb)
 		a = (unsigned int)(-nb);
 	}
 	ft_print(a);
+}
+
+//printf("blabla = \n%s", arg);
+
+int ft_sqrt(int nb);
+
+int		main(void)
+// int	main(int ac, char **av)
+{
+	
+	int nb;
+	nb = 2147483639;
+
+	printf("\nnb = %d\nsqrt = %d\n", nb, ft_sqrt(nb));
+
+	
+	// if (ac != 2)
+		// return 0;
+	// ft_putnbr(atoi(av[1]));	
+	// ft_putchar('\n');
+	return 0;
 }

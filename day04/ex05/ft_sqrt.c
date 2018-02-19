@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/19 16:33:57 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/19 17:31:45 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_print(unsigned int a)
+int	ft_sqrt(int nb)
 {
-	if (a >= 10)
-		ft_print(a / 10);
-	ft_putchar(a % 10 + '0');
-}
-
-void	ft_putnbr(int nb)
-{
-	unsigned int a;
-
-	a = (unsigned int)nb;
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		a = (unsigned int)(-nb);
-	}
-	ft_print(a);
+	int x;
+	x = 1;
+	while (x < nb / x)
+		x++;
+	if (x == nb / x)
+		return (x);
+	return (0);
 }
