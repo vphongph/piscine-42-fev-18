@@ -6,9 +6,11 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/19 18:08:11 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/19 18:02:22 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_sqrt(int nb)
 {
@@ -19,5 +21,6 @@ int	ft_sqrt(int nb)
 		x++;
 	if (x * x == nb)
 		return (x);
+	printf("\nx = %d\n", x);
 	return (0);
 }

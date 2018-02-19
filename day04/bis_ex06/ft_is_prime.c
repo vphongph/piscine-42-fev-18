@@ -1,23 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/19 18:08:11 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/19 19:11:19 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int	ft_is_prime(int nb)
 {
 	int x;
+	int y;
 
 	x = 1;
+	y = 3;
+	if (nb == 2)
+		return (1);
+	if (nb % 2 == 0 || nb <= 1)
+		return (0);
 	while (x < nb / x)
 		x++;
-	if (x * x == nb)
-		return (x);
-	return (0);
+	while (y <= x)
+	{
+		if (nb % y == 0)
+			return (0);
+		y++;
+	}
+	return (1);
 }

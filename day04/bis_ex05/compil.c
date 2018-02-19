@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/19 17:32:44 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/19 18:02:23 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int		main(void)
 {
 	
 	int nb;
-	nb = 2147483639;
+	nb = 9;
 
 	printf("\nnb = %d\nsqrt = %d\n", nb, ft_sqrt(nb));
 
