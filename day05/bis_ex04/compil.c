@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/21 17:06:25 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/21 20:02:45 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,18 @@ void	ft_putnbr(int nb)
 
 //printf("blabla = \n%s", arg);
 
-char *ft_strcpy(char *dest, char *src);
+char *ft_strncpy(char *dest, char *src, unsigned int n);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
-
-
 	char *strsource1;
 	char *strdest1;
 	char *strsource2;
 	char *strdest2;
+	unsigned int n;
+
+	n = 2;
 
 	strsource1 = (char *)malloc(sizeof(char) * 5);
 	strdest1 = (char *)malloc(sizeof(char) * 7);
@@ -64,6 +65,7 @@ int		main(void)
 	strsource1[2] = 'c';
 	strsource1[3] = 'a';
 	strsource1[4] = '\0';
+	// strsource1 = NULL;
 
 	strdest1[0] = '0';
 	strdest1[1] = '1';
@@ -72,28 +74,30 @@ int		main(void)
 	strdest1[4] = '4';
 	strdest1[5] = '5';
 	strdest1[6] = '\0';
+	// strdest1 = NULL;
 
 	strsource2[0] = 'c';
 	strsource2[1] = 'a';
 	strsource2[2] = 'c';
 	strsource2[3] = 'a';
 	strsource2[4] = '\0';
+	// strsource2 = NULL;
 
 	strdest2[0] = '0';
 	strdest2[1] = '1';
 	strdest2[2] = '2';
 	strdest2[3] = '3';
 	strdest2[4] = '4';
-	strdest2[5]	= '5';
-	strdest2[6] = '\0';	
-
+	strdest2[5] = '5';
+	strdest2[6] = '\0';
+	// strdest2 = NULL;
 
 	printf("\nsource = %s\ndest = %s\n", strsource1, strdest1);
-	printf("\nstrcpy dest = %s\n", strcpy(strdest1, strsource1));
+	printf("\nstrncpy dest = %s\n", strncpy(strdest1, strsource1, n));
 	printf("\nsource = %s\ndest = %s\n", strsource1, strdest1);
 
 	printf("\nsource = %s\ndest = %s\n", strsource2, strdest2);
-	printf("\nft strcpy dest = %s\n", ft_strcpy(strdest2, strsource2));
+	printf("\nft strncpy dest = %s\n", ft_strncpy(strdest2, strsource2, n));
 	printf("\nsource = %s\ndest = %s\n", strsource2, strdest2);
 
 	// if (ac != 2)
