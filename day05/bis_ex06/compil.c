@@ -6,13 +6,14 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/22 14:13:22 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/22 19:12:23 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 void	ft_putchar(char c)
 {
@@ -41,17 +42,25 @@ void	ft_putnbr(int nb)
 
 //printf("blabla = \n%s", arg);
 
-int ft_sqrt(int nb);
+int ft_strcmp(char *s1, char *s2);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
 	
-	int nb;
-	nb = 2147395600;
+char str1[8] = "FooFood";
+char str2[4] = "Foo ";
+char str3[8] = "FooFood";
+char str4[4] = "Foo ";
 
-	printf("\nnb = %d\nsqrt = %d\n", nb, ft_sqrt(nb));
+printf("\nstr1 = %s\nstr2 = %s\n", str1, str2);
+printf("\n\tstrcomp = %d\n", strcmp(str1, str2));
+printf("\nstr1 = %s\nstr2 = %s\n", str1, str2);
 
+printf("\nstr3 = %s\nstr4 = %s\n", str3, str4);
+printf("\n\tft_strcomp = %d\n", ft_strcmp(str3, str4));
+printf("\nstr3 = %s\nstr4 = %s\n", str3, str4);
+	
 	
 	// if (ac != 2)
 		// return 0;
