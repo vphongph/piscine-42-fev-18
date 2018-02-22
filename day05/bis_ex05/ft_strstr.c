@@ -1,58 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   compil.c                                           :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/21 20:32:20 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/22 03:49:32 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
-void	ft_putchar(char c)
+int		ft_strlen(char *str)
 {
-	write(1, &c, 1);
+	int count;
+
+	count = 0;
+	while (str[count])
+		count++;
+	return (count);
 }
 
-void	ft_print(unsigned int a)
+char	*ft_strstr(char *str, char *to_find)
 {
-	if (a >= 10)
-		ft_print(a / 10);
-	ft_putchar(a % 10 + '0');
-}
+	int i;
+	int valid;
 
-void	ft_putnbr(int nb)
-{
-	unsigned int a;
-
-	a = (unsigned int)nb;
-	if (nb < 0)
+	if (ft_strlen(str) < ft_strlen(to_find))
+		return ((void*)0);
+	if (!*to_find)
+		return (str);
+	while (*str)
 	{
-		ft_putchar('-');
-		a = (unsigned int)(-nb);
+		i = 0;
+		valid = 0;
+		while (str[i] && str[i] != to_find[i])
+			str++;
+		while (str[i] && str[i] == to_find[i])
+		{
+			i++;
+			valid++;
+			if (valid == ft_strlen(to_find))
+				return (str);
+		}
+		str++;
 	}
-	ft_print(a);
-}
-
-//printf("blabla = \n%s", arg);
-
-
-
-// int		main(void)
-// int	main(int ac, char **av)
-{
-	
-	
-	
-	// if (ac != 2)
-		// return 0;
-	// ft_putnbr(atoi(av[1]));	
-	// ft_putchar('\n');
-	return 0;
+	return ((void*)0);
 }
