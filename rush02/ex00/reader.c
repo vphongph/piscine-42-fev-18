@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/25 21:09:33 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/25 23:26:11 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,6 @@
 int		ft_compare1(char *size, char *str);
 int		ft_compare2(char *size, char *str, int displayed);
 char	*ft_size(char *str);
-
-int		ft_strlen(char *str)
-{
-	int count;
-
-	count = 0;
-	while (str[count])
-		count++;
-	return (count);
-}
 
 char	*ft_cat(char *str, char *buf)
 {

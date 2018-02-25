@@ -6,21 +6,11 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/25 21:09:33 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/25 23:32:07 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
-
-int		ft_strcmp(char *s1, char *s2)
-{
-	int i;
-
-	i = 0;
-	while (s1[i] == s2[i] && s1[i])
-		i++;
-	return (s1[i] - s2[i]);
-}
 
 char	*ft_size(char *str)
 {
@@ -52,37 +42,40 @@ char	*ft_size(char *str)
 
 int		ft_compare2(char *size, char *str, int displayed)
 {
-	if (ft_strcmp(str, ft_rush03(size[0],size[1])) == 0)
+	if (ft_strcmp(str, ft_rush03(size[0], size[1])->str) == 0)
 	{
 		ft_display2(3, displayed, size);
 		displayed = 1;
 	}
-	if (ft_strcmp(str, ft_rush04(size[0],size[1])) == 0)
+	if (ft_strcmp(str, ft_rush04(size[0], size[1])->str) == 0)
 	{
 		ft_display3(4, displayed, size);
 		displayed = 1;
 	}
 	if (displayed == 1)
+	{
+		write(1, "\n", 1);
 		return (0);
+	}
 	return (1);
 }
 
 int		ft_compare1(char *size, char *str)
 {
-	int displayed;
+	int		displayed;
 
 	displayed = 0;
-	if (ft_strcmp(str, ft_rush00(size[0],size[1])) == 0)
+	if (ft_strcmp(str, ft_rush00(size[0], size[1])->str) == 0)
 	{
 		ft_display1(0, displayed, size);
 		displayed = 1;
 	}
-	if (ft_strcmp(str, ft_rush01(size[0],size[1])) == 0)
+	if (ft_strcmp(str, ft_rush01(size[0], size[1])->str) == 0)
 	{
 		ft_display1(1, displayed, size);
 		displayed = 1;
 	}
-	if (ft_strcmp(str, ft_rush02(size[0],size[1])) == 0)
+	if (ft_strcmp(str, ft_rush02(size[0], size[1])->str) == 0)
 	{
 		ft_display2(2, displayed, size);
 		displayed = 1;
