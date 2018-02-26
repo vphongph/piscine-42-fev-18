@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/23 16:49:40 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/26 20:15:30 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,22 @@ void	ft_putnbr(int nb)
 
 //printf("blabla = \n%s", arg);
 
-int ft_str_is_alpha(char *str);
+int ft_str_is_printable(char *str);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
 	
+	char str[3];
+
+	str[0] = 45;
+	str[1] = 'A';
+	str[2] = '\0';
+
+
+	printf("\n str = %s\n", str);	
+
+	printf("\n ft printable = %d\n", ft_str_is_printable(str));
 	
 	
 	// if (ac != 2)
