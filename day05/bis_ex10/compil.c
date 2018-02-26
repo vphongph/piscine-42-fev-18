@@ -6,13 +6,14 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/26 23:57:10 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/26 23:25:04 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 void	ft_putchar(char c)
 {
@@ -41,17 +42,16 @@ void	ft_putnbr(int nb)
 
 //printf("blabla = \n%s", arg);
 
-void ft_putstr(char *str);
+char *ft_strcapitalize(char *str);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
+	char str[62] = "salut, co\nmMent tu vas ? 42Mots QuarANte-d3ux; cinquante+ET+UN";
 	
-char tab[8] = "Gustotoo";
+	printf("\nstr = %s\n", str);
+	printf("\nft capi = %s\n", ft_strcapitalize(str));
 
-ft_putstr(tab);
-ft_putchar('\n');
-	
 	// if (ac != 2)
 		// return 0;
 	// ft_putnbr(atoi(av[1]));	
