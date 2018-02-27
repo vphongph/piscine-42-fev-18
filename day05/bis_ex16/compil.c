@@ -6,13 +6,14 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/27 01:06:32 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/27 13:33:19 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 void	ft_putchar(char c)
 {
@@ -39,43 +40,31 @@ void	ft_putnbr(int nb)
 	ft_print(a);
 }
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
-{
-	while (*str)
-		ft_putchar(*str++);
-	ft_putchar('\n');
-}
-
 //printf("blabla = \n%s", arg);
 
-int		ft_atoi(char *str);
+char 	*ft_strcat(char *dest, char *src);
 
 int		main(void)
 // int	main(int ac, char **av)
 {
-//	char str[4];
+	
+char src1[14] = "~132~";
+char dest1[80] = "Foo";
+char src2[14] = "~123~";
+char dest2[80] = "Foo";
 
-//	str[0]= 49;
-//	str[1]='-';
-//	str[2]= 48;
-//	str[3]='8';
 
+printf("\nsrc1 = %s\ndest1 = %s\n", src1, dest1);
+printf("\n\tstrcat = %s\n", strcat(dest1, src1));
+printf("\nsrc1 = %s\ndest1 = %s\n", src1, dest1);
 
-	char str[] = "-9223372036854775810";
-
-	//			 "9223372036854775807"
-	// printf("\natoi = %d", atoi(str));
-	ft_putstr("atoi = ");
-	ft_putnbr(atoi(str));
-
-	ft_putstr("\nft_atoi = ");
-	ft_putnbr(ft_atoi(str));
-
+printf("\nsrc2 = %s\ndest2 = %s\n", src2, dest2);
+printf("\n\tft_strcat = %s\n", ft_strcat(dest2, src2));
+printf("\nsrc2 = %s\ndest2 = %s\n", src2, dest2);
+	
 	// if (ac != 2)
 		// return 0;
 	// ft_putnbr(atoi(av[1]));	
 	// ft_putchar('\n');
-	return (0);
+	return 0;
 }
