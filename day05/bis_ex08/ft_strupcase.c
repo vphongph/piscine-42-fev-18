@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/23 01:14:42 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 15:52:02 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ char	*ft_strupcase(char *str)
 {
 	int i;
 
-	i = 0;
+	i = -1;
 	while (str[++i])
 		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] + ('A' - 'a');

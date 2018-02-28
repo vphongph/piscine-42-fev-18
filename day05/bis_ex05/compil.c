@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/22 03:55:53 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 17:06:42 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,10 @@ int		main(void)
 // int	main(int ac, char **av)
 {
 	
-char str1[13] = "Foo Food Baz";
-char to_find1[5] = "Food";
-char str2[13] = "Foo Food Baz";
-char to_find2[5] = "Food";
+char str1[] = "a";
+char to_find1[] = " ";
+char str2[] = "a";
+char to_find2[] = " ";
 
 
 printf("\nstr1 = %s\nto find1 = %s\n", str1, to_find1);

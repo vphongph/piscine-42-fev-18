@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/23 01:14:42 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 15:52:01 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int		main(void)
 // int	main(int ac, char **av)
 {
 	
-char str[]= "    81283\n =*+-%$%#$%jwewekjKJHTJK KJyk";
+char str[28]= "fsjdhflkjhsdflkjhsdlkhlfsjd";
 
 printf("\nstr =%s\n", str);
 printf("\nFT =%s\n", ft_strupcase(str));

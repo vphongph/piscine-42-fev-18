@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/22 03:49:32 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 17:07:12 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ char	*ft_strstr(char *str, char *to_find)
 	{
 		i = 0;
 		valid = 0;
-		while (str[i] && str[i] != to_find[i])
-			str++;
 		while (str[i] && str[i] == to_find[i])
 		{
 			i++;
