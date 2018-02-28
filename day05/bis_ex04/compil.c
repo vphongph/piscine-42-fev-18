@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/21 20:02:45 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/27 16:14:29 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ int		main(void)
 	strsource2 = (char *)malloc(sizeof(char) * 5);
 	strdest2 = (char *)malloc(sizeof(char) * 7);	
 
+
+
 	strsource1[0] = 'c';
 	strsource1[1] = 'a';
 	strsource1[2] = 'c';
@@ -104,6 +106,7 @@ int		main(void)
 		// return 0;
 	// ft_putnbr(atoi(av[1]));	
 	// ft_putchar('\n');
+
 	free(strsource1);
 	free(strdest1);
 	free(strsource2);
