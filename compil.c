@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/21 20:32:20 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 12:06:43 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ void	ft_putnbr(int nb)
 // int		main(void)
 // int	main(int ac, char **av)
 {
-	
 	
 	
 	// if (ac != 2)

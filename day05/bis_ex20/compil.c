@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/28 01:48:41 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/02/28 12:11:14 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,9 @@ void ft_putnbr_base(int nbr, char *base);
 int		main(void)
 // int	main(int ac, char **av)
 {
-	int nb;
-	char tab[17] = "0123456789ABCDEF";
+	int nb = 42;
+	char tab[17] = "01";
 
-	nb = 15;
 	ft_putnbr_base(nb, tab);
 	write(1, "\n", 1);
 	
