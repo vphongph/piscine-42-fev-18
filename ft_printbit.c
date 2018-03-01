@@ -6,11 +6,34 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/02/23 16:29:54 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/03/01 18:41:17 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+unsigned char ft_reversebit(unsigned char c)
+{
+	int count;
+	int shift;
+	unsigned char tmp;
+	unsigned char rev;
+
+	shift = 0;
+	count = 0;
+	rev = 0;
+
+	while (count < 8)
+	{
+		tmp = c << 7;
+		tmp = c >> shift;
+		rev = rev | tmp;
+		shift++;
+		count++; 
+	}
+
+	return(rev);
+}
 
 void	ft_printbit(unsigned char c)
 {
@@ -40,8 +63,8 @@ int	main(void)
 {
 	unsigned c;
 
-	c = 255;
-	ft_printbit(c);
+	c = 42;
+	ft_printbit(ft_reversebit(c));
 	write(1,"\n", 1);
 	return 0;
 }
