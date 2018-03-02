@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/03/01 19:24:22 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/03/01 23:43:08 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,12 @@ void	ft_printbit(unsigned char c)
 
 int	main(void)
 {
-	unsigned c;
+	unsigned char c;
 
-	c = 46;
-	ft_printbit(ft_reversebit(c));
-	write(1,"\n", 1);
+	c = 42;
 	ft_printbit(c);
+	write(1,"\n", 1);
+	ft_printbit(ft_reversebit(c));
 	write(1,"\n", 1);
 	return 0;
 }
