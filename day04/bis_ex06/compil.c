@@ -50,10 +50,10 @@ int		main(void)
 
 	nb = -10;
 
-	while (nb++ < 1000)
+	while (nb++ < 2147483647)
 	{
 		if (ft_is_prime(nb) == 1)
-			printf("\nnb = %d\nis prime = %d\n", nb, ft_is_prime(nb));
+			printf("\nnb = %d\n", nb);
 	}
 	
 	// if (ac != 2)
