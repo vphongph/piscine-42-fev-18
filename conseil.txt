@@ -36,6 +36,8 @@ alias lR="ls -lRah"
 Pour ouvrir dossier dans sublime text
 alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+sub [nom du repertoire]
+
 + alias qqchose = 2>&1 >> fichier.txt	pour passer mes messages erreurs dans un fichier texte (historique)
 
 + alias de oh my zsh comme:
