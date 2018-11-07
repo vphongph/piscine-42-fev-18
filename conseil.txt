@@ -43,3 +43,10 @@ sub [nom du repertoire]
 + alias de oh my zsh comme:
 alias l="ls -lah"
 alias md="mkdir"
+
+ASTUCE git
+
+git log pour voir tous les commit
+prendre l'id du commit qui nous interesse
+git reset [id] --hard pour retablir le commit
+git push -f pour ecraser la branche (forcage)
