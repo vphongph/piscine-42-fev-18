@@ -34,7 +34,7 @@ alias gs="git status"
 alias lR="ls -lRah"
 
 Pour ouvrir dossier dans sublime text
-alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ./"
 
 sub [nom du repertoire]
 
