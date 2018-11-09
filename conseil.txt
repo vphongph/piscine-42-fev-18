@@ -25,6 +25,8 @@ set list
 set ruler
 set relativenumber
 
+set tabstop=4
+
 MES ALIAS
 
 .zshrc
