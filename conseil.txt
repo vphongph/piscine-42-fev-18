@@ -36,10 +36,19 @@ alias gs="git status"
 alias lR="ls -lRah"
 
 Pour ouvrir dossier dans sublime text
-alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ./"
+
+sub [nom du repertoire]
 
 + alias qqchose = 2>&1 >> fichier.txt	pour passer mes messages erreurs dans un fichier texte (historique)
 
 + alias de oh my zsh comme:
 alias l="ls -lah"
 alias md="mkdir"
+
+ASTUCE git
+
+git log pour voir tous les commit
+prendre l'id du commit qui nous interesse
+git reset [id] --hard pour retablir le commit
+git push -f pour ecraser la branche (forcage)
