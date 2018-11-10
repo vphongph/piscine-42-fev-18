@@ -46,9 +46,19 @@ sub [nom du repertoire]
 alias l="ls -lah"
 alias md="mkdir"
 
-ASTUCE git
+ASTUCE GIT
 
 git log pour voir tous les commit
 prendre l'id du commit qui nous interesse
 git reset [id] --hard pour retablir le commit
 git push -f pour ecraser la branche (forcage)
+
+ASTUCES SUBLIME TEXT
+
+cmd + shit + p
+installer package control
+lancer intallateur de packages
+installer 42 header
+cmd + alt + h pour afficher le header
+attention, il faut changer le programme car le username et mail pas correct
+-> sublime preference -> browse packages -> 42 headers -> settings.py
