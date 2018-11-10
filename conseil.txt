@@ -25,7 +25,10 @@ set list
 set ruler
 set relativenumber
 
+<<<<<<< HEAD
 uniquement sur son propre ordi
+=======
+>>>>>>> 23ece45b517fe57994bb427e04b9382341e0a75a
 set tabstop=4
 
 MES ALIAS
@@ -58,4 +61,9 @@ git push -f pour ecraser la branche (forcage)
 ASTUCES SUBLIME TEXT
 plugins
 cmd + Shift + p (MACOS)
-Install Package Control
+installer package control
+lancer intallateur de packages
+installer 42 header
+cmd + alt + h pour afficher le header
+attention, il faut changer le programme car le username et mail pas correct
+-> sublime preference -> browse packages -> 42 headers -> settings.py
