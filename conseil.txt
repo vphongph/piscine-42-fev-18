@@ -39,6 +39,9 @@ Pour ouvrir dossier dans sublime text
 alias sub="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ./"
 
 sub [nom du repertoire]
+# update #
+ici pas besoin de specifier le nom du repertoire, la commande ouvre le repertoire courant
+
 
 + alias qqchose = 2>&1 >> fichier.txt	pour passer mes messages erreurs dans un fichier texte (historique)
 
