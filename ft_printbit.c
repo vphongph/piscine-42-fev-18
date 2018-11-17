@@ -6,11 +6,17 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/03/01 23:43:08 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/11/17 22:27:24 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 
 unsigned char ft_reversebit(unsigned char c)
 {
@@ -60,6 +66,15 @@ void	ft_printbit(unsigned char c)
 	}
 }
 
+void	ft_printbite(unsigned char c)
+{
+	int n;
+
+	n = 8;
+	while (n--)
+		ft_putchar(((c >> n) & 1) + '0');
+}
+
 int	main(void)
 {
 	unsigned char c;
@@ -67,7 +82,8 @@ int	main(void)
 	c = 42;
 	ft_printbit(c);
 	write(1,"\n", 1);
-	ft_printbit(ft_reversebit(c));
+	// ft_printbit(ft_reversebit(c));
 	write(1,"\n", 1);
+	ft_printbite(c);
 	return 0;
 }
