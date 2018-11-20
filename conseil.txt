@@ -58,6 +58,17 @@ prendre l'id du commit qui nous interesse
 git reset [id] --hard pour retablir le commit
 git push -f pour ecraser la branche (forcage)
 
+ASTUCE BREW & HTOP
+
+Installer brew
+
+rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
+
+Installer htop
+
+brew install htop >> terminal
+
+
 ASTUCES SUBLIME TEXT
 plugins
 cmd + Shift + p (MACOS)
@@ -67,3 +78,20 @@ installer 42 header
 cmd + alt + h pour afficher le header
 attention, il faut changer le programme car le username et mail pas correct
 -> sublime preference -> browse packages -> 42 headers -> settings.py
+
+Le DL de package ne marche pas a l'ecole ou os sierra -> il faut changer le DL par curl -> preferences -> pack settings -> package control -> user
+
+{
+	"bootstrapped": true,
+	"debug": true,
+	"installed_packages":
+	[
+		"Package Control"
+	],
+	"downloader_precedence":
+	{
+		"linux": [ "curl", "urllib",    "wget" ],
+		"osx": [ "curl", "urllib" ],
+		"windows": [ "wininet" ]
+	},
+}
