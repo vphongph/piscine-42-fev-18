@@ -78,6 +78,7 @@ Mais disparait quand restart le terminal, c'est dans uniquement executé dans le
 
 
 ASTUCES SUBLIME TEXT
+
 plugins
 cmd + Shift + p (MACOS)
 installer package control
@@ -103,6 +104,11 @@ Le DL de package ne marche pas a l'ecole ou os sierra -> il faut changer le DL p
 		"windows": [ "wininet" ]
 	},
 }
+
+
+Pour avoir les commandes de VIM
+
+Une fois après avoir installé 42 headers  -> Pref -> Settings -> Retirer ignored packages "Vintage"
 
 
 Couleurs SublimeLinter ne marche pas apparemment à cause du fait Sublime Text pas à jour
