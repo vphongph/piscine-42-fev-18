@@ -69,6 +69,14 @@ Installer htop
 brew install htop >> terminal
 
 
+ASTUCES SHELL
+
+Pour set alias en exam machine, on def le dossier des alias avec la commande "source"
+-> source {nom du dossier}
+Mais disparait quand restart le terminal, c'est dans uniquement executé dans le process actuel
+
+
+
 ASTUCES SUBLIME TEXT
 plugins
 cmd + Shift + p (MACOS)
