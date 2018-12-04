@@ -6,7 +6,7 @@
 /*   By: vphongph <vphongph@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/11 19:55:25 by vphongph          #+#    #+#             */
-/*   Updated: 2018/11/17 22:27:24 by vphongph         ###   ########.fr       */
+/*   Updated: 2018/12/04 23:20:44 by vphongph         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ unsigned char ft_reversebit(unsigned char c)
 
 void	ft_printbit(unsigned char c)
 {
-	int count;
 	int shift;
 	unsigned char tmp;
 
@@ -54,14 +53,12 @@ void	ft_printbit(unsigned char c)
 	// c = c << 4 | c >> 4;
 
 	shift = 0;
-	count = 0;
-	while (count < 8)
+	while (shift < 8)
 	{
 		tmp = c << shift;
 		tmp = tmp >> 7;
 		tmp = tmp + '0';
 		write(1, &tmp, 1);
-		count ++;
 		shift ++;
 	}
 }
