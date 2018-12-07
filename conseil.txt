@@ -156,3 +156,6 @@ Couleurs SublimeLinter ne marche pas apparemment à cause du fait Sublime Text p
         }
     ],	
 }
+
+ASTUCES memoire a l'ecole
+cmd : du -m ~
