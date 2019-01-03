@@ -51,6 +51,11 @@ update 09/11/2018 : plus besoin du nom du repertoire, mnt c'est direct repertoir
 alias l="ls -lah"
 alias md="mkdir"
 
+alias gccW="gcc -Wall -Wextra -Werror"
+alias gccWS="gcc -Wall -Wextra -Werror -fsanitize=address"
+
+
+
 ASTUCES GIT
 
 git log pour voir tous les commit
@@ -154,10 +159,16 @@ Couleurs SublimeLinter ne marche pas apparemment à cause du fait Sublime Text p
 
             "scope": "region.redish markup.error.sublime_linter invalid"
         }
-    ],	
+    ],
 }
 
 ASTUCES memoire a l'ecole
 cmd : du -m ~ ou du -hd1
 
-pour lib memoire, rm -rf *bak* ou rm -rf *cache* dans library 
+pour lib memoire, rm -rf *bak* ou rm -rf *cache* dans library
+
+ASTUCES VALGRIND
+
+installer view brew, - brew install valgring - dans le terminal
+
+[compilation] &&  valgrind --leak-check=full --track-origins=yes [execution] 2>valgrind.txt && date >>valgrind.txt
