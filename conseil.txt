@@ -54,6 +54,8 @@ alias md="mkdir"
 alias gccW="gcc -Wall -Wextra -Werror"
 alias gccWS="gcc -Wall -Wextra -Werror -fsanitize=address"
 
+alias 42fc="sh ~/42FileChecker/42FileChecker.sh"
+
 
 
 ASTUCES GIT
